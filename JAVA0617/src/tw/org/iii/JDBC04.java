@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class ODBC {
+public class JDBC04 {
 
 	public static void main(String[] args) {
 //		String connectionUrl = 
