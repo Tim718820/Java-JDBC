@@ -25,13 +25,13 @@ public class JDBC06 {
 		ResultSet rs = pstmt.executeQuery();
 		while(rs.next()){
 			String Name = rs.getString("Name");
-			String OrderUrl = rs.getString("OrderUrl");
+			String Feature = rs.getString("Feature");
 			String gid = rs.getString("gid");
-			
+			System.out.println(Feature);
 			jw.object();
 			jw.key("gid").value(gid);
 			jw.key("Name").value(Name);
-			jw.key("OrderUrl").value(OrderUrl);
+			//jw.key("Feature").value(Feature);
 			jw.endObject();
 			
 		}
